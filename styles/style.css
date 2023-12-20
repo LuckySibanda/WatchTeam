@@ -285,6 +285,10 @@ footer hr {
     height: 2px;
 }
 
+.creator {
+    text-decoration: underline;
+}
+
 
 @media (min-width: 525px) and (max-width: 770px) {
 }
@@ -309,17 +313,6 @@ footer hr {
     body {
         font-size: 1.2rem;
     }
-
-    /* .slogan {
-        display: flex;
-        justify-content: center;
-        font-size: 6.4rem;
-        margin: 0 auto;
-
-        background: -webkit-linear-gradient(#fff, #6190E8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    } */
 
     .what--we--do {
         display: flex;
