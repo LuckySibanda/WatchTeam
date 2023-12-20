@@ -1,7 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
     margin: 0;
     padding: 0;
+    background-color: #1b263b;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+a:active {
+    color: #fff;
 }
 
 main {
@@ -11,15 +23,27 @@ main {
 }
 
 header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 70px;
 
     display: flex;
-    background-color: yellowgreen;
+    background-color: #778da9;
+    color: #000;
+
+    border-bottom: 1px solid #1b263b;
+}
+
+.right--section {
+    display: flex;
+    margin: 0;
 }
 
 header img {
-    width: 10%;
+    width: 30%;
     object-fit: contain;
     mix-blend-mode: color-burn;
 }
@@ -31,7 +55,19 @@ header h2 {
     padding: 0;
 }
 
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    margin-left: 10px;
+    list-style-type: none;
+}
+
 .above--fold {
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,11 +79,35 @@ header h2 {
     margin: 0 auto;
     width: 100%;
     object-fit: contain;
-    /* opacity: 0.8; */
 }
 
+.slogan {
+    position: absolute;
+    top: 10%;
+    /* left: 226.665; */
+    left: 40%;
+    width: 25%;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+
+    /* color: #ffffff; */
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
 .what--we--do--head {
+    display: flex;
+    margin: 16px auto;
+    padding: 5px;
     text-align: center;
+    justify-content: center;
+    background-color: #778da9;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    width: 80%;
 }
 
 .what--we--do {
@@ -63,7 +123,10 @@ header h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: yellowgreen;
+    background-color: #778da9;
+    border: none;
+    border-radius: 5px;
+    color: #000;
     width: 80%;
     margin-top: 10px;
     padding-top: 10px;
@@ -71,8 +134,8 @@ header h2 {
 
 .what--we--do div img {
     /* display: flex; */
-    /* margin: 0 auto; */
-    width: 20rem;
+    margin: 0 auto;
+    width: 95%;
     height: auto;
     object-fit: contain;
 }
@@ -92,7 +155,10 @@ header h2 {
 }
 
 .about--us {
-    background-color: yellowgreen;
+    background-color: #778da9;
+    border: none;
+    border-radius: 5px;
+    color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +177,19 @@ header h2 {
     margin: 10px auto;
 }
 
+.groups h2 {
+    background-color: #778da9;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .groups div {
     display: flex;
     flex-direction: column;
@@ -119,15 +198,27 @@ header h2 {
     margin: 10px 0;
 }
 
+.groups h3 {
+    text-align: center;
+}
+
 .individual--group {
-    border: 2px solid yellowgreen;
+    background-color: #778da9;
+    color: #000;
+    border: none;
+    border-radius: 5px;
     padding-bottom: 20px;
+    width: 70%;
 }
 
 .group--info {
     display: flex;
     justify-content: space-between;
     justify-content: center;
+}
+
+.group--info span {
+    margin: 0 1.1rem;
 }
 
 .group--specifics {
@@ -140,6 +231,10 @@ header h2 {
 .group--specifics img {
     width: 60%;
     object-fit: cover;
+}
+
+.dog {
+    mix-blend-mode: color-burn;
 }
 
 .group--descript {
@@ -160,13 +255,18 @@ header h2 {
     transition: 0.1s;
 }
 
+.join--btn {
+    border: 1px solid #1b263b;
+}
+
 .groups button:active {
     background-color: darkgreen;
     border: 1px solid black;
 }
 
 footer {
-    background-color: grey;
+    background-color: #415a77;
+    color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,17 +274,52 @@ footer {
     padding: 10px 0;
 }
 
+.address {
+    text-align: center;
+}
+
 footer hr {
-    background-color: #ffffff;
+    background-color: #000;
+    border: none;
     width: 95%;
     height: 2px;
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 525px) and (max-width: 770px) {
+}
+
+
+@media (max-width: 770px) {
+    /* .slogan {
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        font-size: 3.4em;
+        background: -webkit-linear-gradient(#fff, #6190E8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        margin: 0 auto;
+    } */
+} 
+
+@media (min-width: 800px) {
     body {
         font-size: 1.2rem;
     }
+
+    /* .slogan {
+        display: flex;
+        justify-content: center;
+        font-size: 6.4rem;
+        margin: 0 auto;
+
+        background: -webkit-linear-gradient(#fff, #6190E8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } */
 
     .what--we--do {
         display: flex;
@@ -196,6 +331,12 @@ footer hr {
 
     .what--we--do div {
         width: 30%;
+    }
+
+    .what--we--do div img {
+        width: 95%;
+        object-fit: contain;
+        margin: 0 auto;
     }
 
     .group--specifics {
